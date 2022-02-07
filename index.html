@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <div id="opciones">
+      <div id="iniciojuego">
+        <h1 class="titulo">Ahorcado</h1>
+        <button class="btn" id="iniciar-juego">INICIAR JUEGO</button>
+      </div>
+      <div id="agregapalabra">
+        <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Solo letras (y solo mayúsculas)">
+        <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+      </div>
+
+      <div id="mostrarInput" class="text-input" style="margin-bottom: 10px; margin-top: 10px; display: none;">
+        Letra elegida: <input type="text" id="entradaLetras" size="1" />
+      </div>
+      
+
+      <div style="text-align:center;">
+        <canvas id="ahorcado" height="400px" width="800px" style="background-color: lightgreen;"></canvas>
+      </div>
+  
+      <div id="pie">
+        <p>Oracle ONE - Alura Latam - Challenge 1 - AHORCADO - Mauricio A. Saizar</p>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/palabras.js"></script>
+
+    <script type="text/javascript" src="js/logica.js"></script>
+
+  </body>
+</html>
